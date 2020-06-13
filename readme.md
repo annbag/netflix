@@ -1,10 +1,8 @@
 # Netflix
 
-* [ ] Prezentacja listy filmów
-* [ ] Szczegóły filmu
-* [ ] Prezentacja profilu filmu
-* [ ] Odtwarzanie filmu
-* [ ] Player
+* [x] Prezentacja listy filmów
+* [ ] Szczegóły filmu, prezentacja profilu filmu
+* [ ] Odtwarzanie filmu, Player
 * [ ] Wyszukiwarka
 * [ ] Kategorie (np filmy i seriale), prezentacja filmów na podstawie typu
 * [ ] Lista najnowszych
