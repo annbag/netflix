@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieListService } from '../../services/movie-list.service';
+import { MovieList } from '../../interfaces/movie-list.interface';
 
 @Component({
     selector: 'app-movie-list',
@@ -7,6 +8,7 @@ import { MovieListService } from '../../services/movie-list.service';
     styleUrls: ['./movie-list.component.scss']
 })
 export class MovieListComponent implements OnInit {
+    movies: MovieList = [];
 
     constructor(private movieListService: MovieListService) { }
 
@@ -16,8 +18,9 @@ export class MovieListComponent implements OnInit {
 
     loadMovieList() {
         this.movieListService.getMovieList().subscribe({
-            next(x) {
-                console.log('next', x);
+            next: (movies) => {
+                this.movies = movies;
+                console.log('next', this);
             }
         });
     }
