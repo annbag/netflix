@@ -6,6 +6,7 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
 
 @NgModule({
   declarations: [MovieListComponent],
+  exports: [MovieListComponent],
   imports: [
     CommonModule
   ]
