@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -8,7 +9,8 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
   declarations: [MovieListComponent],
   exports: [MovieListComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ]
 })
 export class MovieListModule { }
