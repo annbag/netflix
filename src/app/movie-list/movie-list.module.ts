@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieComponent } from './components/movie/movie.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { MovieComponent } from './components/movie/movie.component';
   exports: [MovieListComponent],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ]
 })
 export class MovieListModule { }

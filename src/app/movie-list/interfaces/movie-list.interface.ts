@@ -6,5 +6,5 @@ export interface Movie {
     videoUrl: string;
 }
 
-export interface MovieList extends Array<Movie>{
+export interface MovieList extends Array<Movie> {
 }

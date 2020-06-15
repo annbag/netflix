@@ -2,6 +2,6 @@
     <img src="{{movie.thumbUrl}}" alt="{{movie.title}}">
     <div class="card-body">
         <h3>{{movie.title}}</h3>
-        <a class="btn btn-info">Details</a>
+        <a [routerLink]="['/movie/'] + movie.id" class="btn btn-info">Details</a>
     </div>
 </div>
