@@ -5,8 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieComponent } from './components/movie/movie.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [MovieListComponent, MovieComponent],
   exports: [MovieListComponent],
