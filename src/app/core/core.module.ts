@@ -5,6 +5,7 @@ import { CoreRoutingModule } from './core-routing.module';
 import { AppComponent } from './components/app/app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { MovieListModule } from '../movie-list/movie-list.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MovieListModule } from '../movie-list/movie-list.module';
   imports: [
     BrowserModule,
     CoreRoutingModule,
-    MovieListModule
+    MovieListModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

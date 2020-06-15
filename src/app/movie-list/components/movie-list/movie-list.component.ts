@@ -20,7 +20,6 @@ export class MovieListComponent implements OnInit {
         this.movieListService.getMovieList().subscribe({
             next: (movies) => {
                 this.movies = movies;
-                console.log('next', this);
             }
         });
     }
