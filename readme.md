@@ -2,6 +2,7 @@
 
 * [x] Prezentacja listy filmów
 * [x] Szczegóły filmu, prezentacja profilu filmu
+* [x] Przekierowanie not-found
 * [ ] Odtwarzanie filmu, Player
 * [ ] Wyszukiwarka
 * [ ] Kategorie (np filmy i seriale), prezentacja filmów na podstawie typu

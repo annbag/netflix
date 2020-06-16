@@ -10,6 +10,14 @@ const routes: Routes = [
     {
         path: 'movie/:id',
         loadChildren: () => import('../movie-details/movie-details.module').then(m => m.MovieDetailsModule)
+    },
+    {
+        path: 'not-found',
+        loadChildren: () => import('../not-found/not-found.module').then(m => m.NotFoundModule)
+    },
+    {
+        path: '**',
+        redirectTo: 'not-found'
     }
 ];
 
