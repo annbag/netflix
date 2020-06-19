@@ -6,11 +6,11 @@ import { environment } from 'src/environments/environment';
 @Injectable({
     providedIn: 'root'
 })
-export class MovieDetailsService {
+export class MovieProfileService {
 
     constructor(private http: HttpClient) { }
 
-    getMovieDetails(id: string) {
+    getMovie(id: string) {
         return this.http.get<Movie>(`${environment.movieListURL}/${id}`)
     }
 }

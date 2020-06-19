@@ -9,7 +9,7 @@ const routes: Routes = [
     },
     {
         path: 'movie/:id',
-        loadChildren: () => import('../movie-details/movie-details.module').then(m => m.MovieDetailsModule)
+        loadChildren: () => import('../movie-profile/movie-profile.module').then(m => m.MovieProfileModule)
     },
     {
         path: 'not-found',
