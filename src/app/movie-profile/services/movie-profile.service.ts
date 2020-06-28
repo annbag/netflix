@@ -11,6 +11,6 @@ export class MovieProfileService {
     constructor(private http: HttpClient) { }
 
     getMovie(id: string) {
-        return this.http.get<Movie>(`${environment.movieListURL}/${id}`)
+        return this.http.get<Movie>(`${environment.movieListURL}/${id}`);
     }
 }

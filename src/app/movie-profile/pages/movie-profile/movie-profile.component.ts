@@ -11,6 +11,7 @@ import { MovieProfileService } from '../../services/movie-profile.service';
 export class MovieProfileComponent implements OnInit {
 
     movie: Movie;
+    infoAboutPrice: string;
 
     constructor(
         private movieProfileService: MovieProfileService,
@@ -28,10 +29,15 @@ export class MovieProfileComponent implements OnInit {
             next: (movie) => {
                 console.log(movie);
                 this.movie = movie;
+                this.displayInfoAboutPrice()
             },
             error: () => {
                 this.router.navigate(['not-found']);
             }
         });
+    }
+
+    private displayInfoAboutPrice() {
+        this.infoAboutPrice = this.movie.title.substr(-1) === 'a' ? 'darmowy' : 'płatny'
     }
 }
