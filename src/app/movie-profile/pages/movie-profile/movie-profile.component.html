@@ -1,1 +1,6 @@
-<p>movie-profile works!</p>
+<ng-container *ngIf="movie">
+    <img src="{{movie.thumbUrl}}" alt="{{movie.title}}">
+    <h3>{{movie.title}}</h3>
+    <p>{{movie.description}}</p>
+    <p></p>
+</ng-container>
