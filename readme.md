@@ -9,11 +9,12 @@
     - [ ] Kontrolki
         - [x] pauza
         - [x] play
-        - [ ] stop
+        - [x] stop
         - [ ] valumeup
         - [ ] volumedown
         - [ ] playspeed
         - [ ] progres-bar
+        - [ ] poster
 * [ ] Wyszukiwarka
 * [ ] Kategorie (np filmy i seriale), prezentacja filmów na podstawie typu
 * [ ] Lista najnowszych

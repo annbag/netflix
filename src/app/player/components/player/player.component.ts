@@ -23,5 +23,9 @@ export class PlayerComponent implements OnInit {
     pause() {
         this.$video.nativeElement.pause()
     }
-
+    
+    stop() {
+        this.$video.nativeElement.pause()
+        this.$video.nativeElement.currentTime = 0;
+    }
 }
