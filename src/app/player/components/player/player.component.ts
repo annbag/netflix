@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { Movie } from 'src/app/movie-list/interfaces/movie-list.interface';
 
 @Component({
@@ -9,10 +9,19 @@ import { Movie } from 'src/app/movie-list/interfaces/movie-list.interface';
 export class PlayerComponent implements OnInit {
 
     @Input() movie: Movie = null;
-    
+    @ViewChild('video', { static: true }) $video: ElementRef<HTMLVideoElement> = null;
+
     constructor() { }
 
     ngOnInit() {
+    }
+
+    play() {
+        this.$video.nativeElement.play()
+    }
+
+    pause() {
+        this.$video.nativeElement.pause()
     }
 
 }

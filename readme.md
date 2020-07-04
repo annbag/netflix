@@ -4,8 +4,16 @@
     - [x] wyświetlić dane filmu, funkcja która zwraca czy film jest darmowy czy płatny na podstawie tytułu
 * [x] Szczegóły filmu, prezentacja profilu filmu
     - [x] Przekierowanie not-found
-* [ ] Odtwarzanie filmu, Player
-    - [ ] Kontrolki: pauza, play, stop, valumeup, volumedown, playspeed, progres-bar
+* [ ] Odtwarzanie filmu
+    - [x] Player
+    - [ ] Kontrolki
+        - [x] pauza
+        - [x] play
+        - [ ] stop
+        - [ ] valumeup
+        - [ ] volumedown
+        - [ ] playspeed
+        - [ ] progres-bar
 * [ ] Wyszukiwarka
 * [ ] Kategorie (np filmy i seriale), prezentacja filmów na podstawie typu
 * [ ] Lista najnowszych
