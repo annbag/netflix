@@ -1,7 +1,7 @@
 # Netflix
 
 * [x] Prezentacja listy filmów
-    - [ ] wyświetlić dane filmu, funkcja która zwraca czy film jest darmowy czy płatny na podstawie tytułu
+    - [x] wyświetlić dane filmu, funkcja która zwraca czy film jest darmowy czy płatny na podstawie tytułu
 * [x] Szczegóły filmu, prezentacja profilu filmu
     - [x] Przekierowanie not-found
 * [ ] Odtwarzanie filmu, Player
